@@ -1,0 +1,28 @@
+class Administrator {
+private:
+    Catalog videoCatalog;
+
+public:
+    void addCassetteToDatabase(const VideoCassette& cassette) {
+        // Добавление кассеты в базу данных
+    }
+
+    void removeCassetteFromDatabase(const std::string& title) {
+        // Удаление кассеты из базы данных
+    }
+
+    void editCassetteInformation(const std::string& title, const std::string& newDueDate, double newRentalCost, const std::string& newGenre) {
+        // Редактирование информации о кассете
+    }
+};
+
+class Client {
+public:
+    void chooseCassette(const Catalog& videoCatalog) {
+        // Реализация выбора кассеты через специальный интерфейс
+    }
+
+    void makePayment(double amount) {
+        // Реализация внесения оплаты
+    }
+};
